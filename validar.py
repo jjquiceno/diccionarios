@@ -15,25 +15,31 @@ while True:
     print('=======================================================================')
     opcion=input('entre la opcion 1, 2, 3 o 4: ')
     if opcion=='1':
-        nombre=input("diga su nombre ")
-        if nombre.isalpha():
-            print("su nombre es: ", nombre)
-        else:
-            print('su nombre esta mal digitado')
+        while True:
+            nombre=input("diga su nombre ")
+            if nombre.isalpha():
+                print("su nombre es: ", nombre)
+                break
+            else:
+                print('su nombre esta mal digitado')
 
     elif opcion=='2':
-        edad=input('digite su edad ')
-        if edad.isdecimal():
-            print('su edad es: ',edad)
-        else: 
-            print('su edad esta mal digitada')
+        while True:
+            edad=input('digite su edad ')
+            if edad.isdecimal():
+                print('su edad es: ',edad)
+                break
+            else: 
+                print('su edad esta mal digitada')
 
     elif opcion=='3':
-        correo=input('digite su correo ')
-        if correo.find('@')>=0 and correo.find('.')>=0:
-            print('su correo es: ',correo)
-        else: 
-            print('su correo esta mal digitado')
+        while True:
+            correo=input('digite su correo ')
+            if correo.find('@')>=0 and correo.find('.')>=0:
+                print('su correo es: ',correo)
+                break
+            else: 
+                print('su correo esta mal digitado')
     
     elif opcion=='4':
         print('adios')
